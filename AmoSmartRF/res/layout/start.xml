@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 该文件是AboutActivity.java文件所使用的布局文件 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/start_edit_SetDeviceName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:maxLength="20"
+            android:text="BLE4.0-Device"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/start_button_SetDeviceName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="设置设备名(重启设备后生效)"
+            android:textSize="24sp"
+            android:textStyle="bold" />        
+        
+        <TextView
+            android:id="@+id/start_txt_temperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="当前温度:\r\n当前湿度:"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/start_txt_ADC0ADC1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="ADC0: ?  ADC1: ?"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/start_button_Read_ADC0ADC1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="读取当前ADC0、ADC1的值"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/start_txt_SetPWM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:maxLength="8"
+            android:text="50607080"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/start_button_SetPwm"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="设置4通道PWM"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+          
+
+		<Switch  
+	        android:id="@+id/led1_switch"  
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"  
+	        android:textOff="Led1关灯"  
+	        android:textOn="Led1开灯" />          
+
+		<Switch  
+	        android:id="@+id/led2_switch"  
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"  
+	        android:textOff="Led2关灯"  
+	        android:textOn="Led2开灯" />  
+
+		
+		<Switch  
+	        android:id="@+id/led3_switch"  
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"  
+	        android:textOff="Led3关灯"  
+	        android:textOn="Led3开灯" />   
+
+
+        <TextView
+            android:id="@+id/board_info_log"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:text="按键状态"
+            android:textSize="24sp" />        				
+    </LinearLayout>
+
+</LinearLayout>
